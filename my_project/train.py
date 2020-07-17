@@ -25,8 +25,8 @@ def read_data(
     reader: DatasetReader
 ) -> Tuple[Iterable[Instance], Iterable[Instance]]:
     print("Reading data")
-    training_data = reader.read("/path/to/your/training/data")
-    validation_data = reader.read("/path/to/your/validation/data")
+    training_data = reader.read("data/train.tsv")
+    validation_data = reader.read("data/dev.tsv")
     return training_data, validation_data
 
 
